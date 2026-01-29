@@ -6,13 +6,13 @@
 <body>
 	<h1>Signup</h1>
 	<form method="post">
-	<table border="1">
+	<table border="0">
 		<tr>
 			<td>
 			<label for="user_name">Name</label>
 			</td>
 			<td>
-			<input type="text" name="user_name" id="user_name" />
+			<input type="text" name="user_name" id="user_name" placeholder="Enter name" />
 			</td>
 		</tr>
 		<tr>
@@ -20,9 +20,51 @@
 			<label for="user_email">Email</label>
 			</td>
 			<td>
-			<input type="email" name="user_email" id="user_email" />
+			<input type="email" name="user_email" id="user_email" value="abe@gmail.com" />
 			</td>
 		</tr>
+		<tr>
+			<td>
+			<label for="">Address</label>
+			</td>
+			<td>
+			<textarea name="user_addr" id="user_addr" rows="6" cols="30">
+			</textarea>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+			<label for="user_nation">Nationality</label>
+			</td>
+			<td>
+			<select name="user_nation" id="user_nation">
+			<option value="">Select</option>
+			<option value="ind">India</option>
+			<option value="aus" selected>Australia</option>
+			<option value="jp">Japan</option>
+			<option value="sl">Sri Lanka</option>
+			</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td><label for="">Gender</label></td>
+			<td>
+			<input type="radio" name="gender" id="male">Male
+			<input type="radio" name="gender" id="female" checked>Female
+			</td>
+		</tr>
+
+		<tr>
+			<td><label for="">Hobby</label></td>
+			<td>
+				<input type="checkbox" name="hobby" id="gardening" value="gardening" checked>Gardening
+				<input type="checkbox" name="hobby" id="cooking" value="cooking">Cooking
+				<input type="checkbox" name="hobby" id="cricket" value="cricket">Cricket 
+			</td>
+		</tr>
+
 		<tr>
 			<td colspan="2" align="center">
 			<button type="submit" name="submit_btn">
@@ -30,6 +72,7 @@
 			</button>
 			</td>
 		</tr>
+		
 	</table>
 	</form>
 </body>
