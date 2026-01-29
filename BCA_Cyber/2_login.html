@@ -6,14 +6,19 @@
 	<body>
 		<h1>Login</h1>
 		<form>
-		<table>
+		<table border="1" cellpadding="5" cellspacing="0">
 		<tr>
-			<td> <label>Email</label> </td>
+			<td> <label for="user_email">Email</label> </td>
 			<td> <input type="text" name="user_email" id="user_email" /></td>
 		</tr>
 		<tr>
 			<td><label>Password</label></td>
 			<td><input type="password" name="user_pwd" id="user_pwd" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+			<button type="submit" name="submit_btn">Login</button>
+			</td>
 		</tr>
 		</table>
 		</form>
