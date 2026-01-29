@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Signup Form</title>
+	</head>
+	<body>
+		<h1>Signup!</h1>
+		<form method="post">
+		<table border="0" cellpadding="5" cellspacing="0">
+		<tr>
+			<td> <label for="user_email">Email</label> </td>
+			<td> <input type="email" name="user_email" id="user_email" required /></td>
+		</tr>
+		<tr>
+			<td><label for="user_pwd">Password</label></td>
+			<td><input type="password" name="user_pwd" id="user_pwd" required /></td>
+		</tr>
+		
+		<tr>
+			<td><label for="user_addr">Address</label></td>
+			<td><textarea rows="6" cols="30" name="user_addr" id="user_addr"></textarea></td>
+		</tr>
+		<tr>
+			<td><label for="user_mob">Mobile</label></td>
+			<td><input type="text" maxlength="10" name="user_mob" id="user_mob" /> </td>
+		</tr>
+		<tr>
+			<td><label for="gender">Gender</label></td>
+			<td>
+				<input type="radio" name="gender" id="male" />Male
+				<input type="radio" name="gender" id="female" checked />Female
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+			<button type="submit" name="submit_btn">Signup</button>
+			</td>
+		</tr>
+		</table>
+		</form>
+	</body>
+</html>
