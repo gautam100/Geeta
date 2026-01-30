@@ -1,0 +1,23 @@
+<html>
+<head>
+<style>
+.box{
+	width: 100px;
+	height:80px;
+	border: 1px solid #000;
+}
+</style>
+</head>
+<body>
+
+<div id="div1" class="box"></div>
+<button id="btn" onclick="hello()">Click Me</button>
+<script>
+function hello(){
+	//debugger;
+	//window.alert("here")
+	document.getElementById("div1").innerHTML="<strong>Hello World</strong>"
+}
+</script>
+</body>
+</html>
