@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+</head>
+<body>
+	<input type="number" id="circle_radius" placeholder="Enter Radius" />
+	<button onclick="createCircle()">Submit</button>
+
+	<svg id="svg1" width="500px" height="500px" style="border:2px solid #000">
+	<circle r="50" cx="250" cy="250" fill="red" />
+	</svg>
+
+	<script>
+	function createCircle(){
+	let radius = document.getElementById("circle_radius").value;
+	document.getElementById("svg1").innerHTML = "<circle r='"+radius+"' cx='250' cy='250' fill='green' />";
+	}
+	</script>
+
+</body>
+</html>

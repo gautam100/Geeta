@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Signup Form</title>
+	<style>
+	.square-box{
+		width:50px;
+		height:76px;
+		background-color: 1px solid red;
+		display:flex;
+		justify-content: center;
+		text-align:center;
+		margin:150px;
+		padding:130px;
+		border-radius:30px;
+}
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="square-box"> sqaurebox</div>
+
+</body>
+</html>
+
+
+
+
+
