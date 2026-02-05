@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+	<svg id="svg1" width="500" height="500" style="border:1px solid #000;">
+	<circle id="circle1" r="50" cx="250" cy="250" fill="red" />
+	</svg>
+	<input type="number" id="inp_radius" placeholder="Enter radius" />
+	<button onclick="createCircle()">Click here</button>
+	<div id="area_container"></div>
+<script>
+	function createCircle(){
+		
+		let radius = document.getElementById("inp_radius").value;
+		let area = 3.141 * radius * radius;
+		document.getElementById("svg1").innerHTML = "<circle r='"+radius+"' cx='250' cy='250' fill='green' />";
+		document.getElementById("area_container").innerHTML = "Area is:"+area;
+
+	}
+</script>
+</body>
+</html>
+
+
+

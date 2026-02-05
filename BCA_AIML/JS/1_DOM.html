@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+.box{
+	width: 250px;
+	height: 200px;
+	border: 1px dotted #000;
+	padding: 10px;
+	margin: 20px;
+}
+</style>
+</head>
+<body>
+	<div id="div1" class="box" onmouseover="changeBackground()" onmouseout="resetBackground()"> Content... </div>
+<script>
+function changeBackground(){
+	document.getElementById("div1").style.backgroundColor = "red";
+}
+function resetBackground(){
+	document.getElementById("div1").style.backgroundColor = "#FFF";
+}
+</script>
+</body>
+</html>
+
+
+
