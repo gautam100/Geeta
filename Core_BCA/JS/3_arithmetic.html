@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<input type="number" id="first_num" placeholder="Enter First Number" />
+	<input type="number" id="second_num" placeholder="Enter First Number" />
+	<br /><br />
+	<button onclick="doAdd()">Add</button>
+	<button onclick="doSub()">Sub</button>
+	<button onclick="doMultiply()">Multiply</button>
+	<br /> <br />
+	
+	<div id="result_container"> </div>
+	
+	<script>
+	function doAdd(){
+		let a = parseInt(document.getElementById("first_num").value)
+		let b = parseInt(document.getElementById("second_num").value)
+		let sum = a+b
+		document.getElementById("result_container").innerHTML = "<h1>"+sum+"</h1>";
+	}
+	function doSub(){
+		let a = parseInt(document.getElementById("first_num").value)
+		let b = parseInt(document.getElementById("second_num").value)
+		document.getElementById("result_container").innerHTML = "<h1>"+(a-b)+"</h1>";
+	}
+	function doMultiply(){
+		let a = parseInt(document.getElementById("first_num").value)
+		let b = parseInt(document.getElementById("second_num").value)
+		document.getElementById("result_container").innerHTML = "<h1>"+(a*b)+"</h1>";
+
+	}
+	</script>
+</body>
+</html>
+
+
