@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<style>
+	
+</style>
+</head>
+<body>
+	<marquee direction="right" behaviour="alternate"><h1>Conditional Statement</h1></marquee>
+	<input type="text" id="name1" placeholder="Enter First name" />
+	<input type="text" id="name2" placeholder="Enter Second name" />
+	<br  />
+	<button onclick="func1()">Check</button>
+	<div id="result"></div>
+<script>
+	function func1(){
+		let name1 = document.getElementById("name1").value;
+		let name2 = document.getElementById("name2").value;
+		if(name1 === name2){
+		document.getElementById("result").innerHTML = "<strong>Both are same</strong>";
+		}else{
+		document.getElementById("result").innerHTML = "<strong>Both are not same</strong>";
+		}
+	}
+</script>
+</body>
+</html>
+
+
+
