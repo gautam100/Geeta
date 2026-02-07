@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<select id="week_day">
+		<option value="">Select</option>
+		<option value="1">Monday</option>
+		<option value="2">Tuesday</option>
+		<option value="3">Wed</option>
+		<option value="4">Thrus</option>
+		<option value="5">Fri</option>
+		<option value="6">Sat</option>
+		<option value="7">Sun</option>
+	</select>
+	<button onclick="getWeekDay()">Click</button>
+	<div id="result">...</div>
+
+	<script>
+	function getWeekDay(){
+		let wd = parseInt(document.getElementById("week_day").value)
+		let elem = document.getElementById("result")
+
+		if(wd === 1){
+			elem.innerHTML = "First day of week"
+		}else if(wd === 2){
+			elem.innerHTML = "Second day of week"
+		}else if(wd === 3){
+			elem.innerHTML = "Third day of week"
+		}else if(wd === 4){
+			elem.innerHTML = "Fourth day of week"
+		}else if(wd === 5){
+			elem.innerHTML = "Fifth day of week"
+		}else if(wd === 6){
+			elem.innerHTML = "Sixth day of week"
+		}else if(wd === 7){
+			elem.innerHTML = "Seventh day of week"
+		}else{
+			elem.innerHTML = "Pls select any week day"
+		}
+	}
+	</script>
+</body>
+</html>
+
+

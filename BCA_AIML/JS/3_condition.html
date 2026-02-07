@@ -2,16 +2,24 @@
 <html>
 <head>
 <style>
-	
+	.box{
+	width: 200px;
+	height: 80px;
+	border:2px solid #000;
+	margin:10px;
+	padding: 10px;
+	}
 </style>
 </head>
 <body>
 	<marquee direction="right" behaviour="alternate"><h1>Conditional Statement</h1></marquee>
-	<input type="text" id="name1" placeholder="Enter First name" />
+
+	<input type="text" id="name1" placeholder="Enter First name" onkeyup=func2(this.value) />
 	<input type="text" id="name2" placeholder="Enter Second name" />
 	<br  />
 	<button onclick="func1()">Check</button>
 	<div id="result"></div>
+	<div id="get_inp_data" class="box"></div>
 <script>
 	function func1(){
 		let name1 = document.getElementById("name1").value;
@@ -21,6 +29,10 @@
 		}else{
 		document.getElementById("result").innerHTML = "<strong>Both are not same</strong>";
 		}
+	}
+	
+	function func2(data){
+	document.getElementById("get_inp_data").innerHTML = data
 	}
 </script>
 </body>
