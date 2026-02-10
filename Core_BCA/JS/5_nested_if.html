@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<style>
+		
+	</style>
+</head>
+<body>
+
+	<input type="number" id="user_age" placeholder="Enter Age" />
+	<br />
+	<select id="user_gender">
+		<option value="">Select Gender</option>
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+	</select>
+	<br />
+	<button onclick="serve()">Click Here</button>
+	<div id="result"</div>
+	<script>
+	function serve(){
+		let age = parseInt(document.getElementById("user_age").value)
+		let gender = document.getElementById("user_gender").value
+		if(age >= 18){
+			if(gender === "male"){
+				document.getElementById("result").innerHTML = "<h1>Enjoy your Mojito</h1>";
+			}else{
+				document.getElementById("result").innerHTML = "<h1>Enjoy your Lemonade</h1>";
+			}
+				
+		}else{
+			document.getElementById("result").innerHTML = "<h1>Enjoy your Coke</h1>";
+
+		}
+	}
+	</script>
+</body>
+</html>
+
+

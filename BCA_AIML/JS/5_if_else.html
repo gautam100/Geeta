@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+	<h1> Compare number </h1>
+	<input type="text" id="first_number" placeholder="first number" />
+	<input type="text" id="second_number" placeholder="second number" />
+	
+	<button onclick="compareValues()">Check</button>
+	<div id="result"></div>
+<script>
+	function compareValues(){
+		let a  = parseInt(document.getElementById("first_number").value) //number
+		let b  = document.getElementById("second_number").value //string
+
+		if(a === b){
+			document.getElementById("result").innerHTML = "Both are same"
+		}else{
+			document.getElementById("result").innerHTML = "Both are different"
+		}
+	}
+</script>
+</body>
+</html>
+
+
+

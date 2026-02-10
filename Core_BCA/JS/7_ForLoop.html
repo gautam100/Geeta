@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Table</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<input type="number" id="tab_num" onchange="prnTable()" />
+	<div id="result"></div>
+
+	<script>
+	function prnTable(){
+		debugger;
+		let table = parseInt(document.getElementById("tab_num").value)
+		let container = document.getElementById("result")
+
+		for(let i=1;i<10;i++){
+			container.inneHTML += table + "X" + i + "="+ table*i + "<br />"
+		}
+		
+	}
+	</script>
+</body>
+</html>
+
+
