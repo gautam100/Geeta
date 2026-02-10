@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+	<h1> Print Week Day </h1>
+	<select id="dd_weekday" onchange="printDay()">
+		<option value=""> -- Select -- </option>
+		<option value="mon">Monday </option>
+		<option value="tue">Tuesday</option>
+		<option value="wed">Wednesday</option>
+		<option value="thrus">Thrusday</option>
+		<option value="fri">Friday</option>
+		<option value="sat">Saturday</option>
+		<option value="sun">Sunday</option>
+		
+	</select>
+	<div id="result"></div>
+
+	<script>
+	function printDay(){
+		let day = document.getElementById("dd_weekday").value
+		let elem = document.getElementById("result")
+		if(day === "mon"){
+			elem.innerHTML = "First day of week"
+		}else if(day === "tue"){
+			elem.innerHTML = "Second day of week"
+		}else if(day === "wed"){
+			elem.innerHTML = "Third day of week"
+		}else if(day === "thrus"){
+			elem.innerHTML = "Fourth day of week"
+		}else if(day === "fri"){
+			elem.innerHTML = "fifth day of week"
+		}else if(day === "sat"){
+			elem.innerHTML = "Sixth day of week"
+		}else if(day === "sun"){
+			elem.innerHTML = "Its week-end!!!"
+		}else{
+			elem.innerHTML = "Pls select a day from drop down."
+		}
+	
+	}
+	</script>
+</body>
+</html>
+
+
+

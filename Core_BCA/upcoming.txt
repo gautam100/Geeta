@@ -1,1 +1,5 @@
 Hoisting
+
+switch case
+
+Ternary operator
