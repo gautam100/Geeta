@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+	<input type="number" id="age" placeholder="Enter age" />
+	<select id="gender">
+		<option value="">--Select Gender--</option>
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+	</select>
+	<br />
+	<button onclick="serve()">Click here</button>
+	<div id="result" style="width:200px; height:150px; border:1px solid #000;">
+		yahan result ayega
+	</div>
+
+	<script>
+	function serve(){
+		var a = document.getElementById("age").value
+		let g = document.getElementById("gender").value
+		let elem = document.getElementById("result")
+		if(a>18){
+			if(g === "male"){
+				elem.innerHTML = "<h1>Enjoy Mojito</h1>"
+			}else if(g==="female"){
+				elem.innerHTML = "<h1>Enjoy Lemonade</h1>"
+			}else{
+				elem.innerHTML = "<h1>Pls Select Gender</h1>"
+			}
+		}else{
+			elem.innerHTML = "<h1>Enjoy your Coke</h1>";
+		}
+	}
+	</script>
+</body>
+</html>
+
+
+
