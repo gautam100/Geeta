@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" ?>
+	<meta name="description" content="" />
+	<title>Transition & Transform </title>
+	<style>
+	.box1{
+		width: 200px;
+		height:150px;
+		background-color: red;
+		transition: width 2s, height 2s, background-color 3s ease-in-out 3s;
+		
+	}
+	.box1:hover{
+		width: 400px;
+		height: 300px;
+		background-color: green;
+		
+	}
+
+	.box2{
+		background: darkturquoise;
+  		border-radius: 5px;
+  		height: 100px;
+  		margin: 100px;
+  		width: 100px;
+ 		transition: transform 1s;
+	}
+	.box2:hover{
+		transform: scale(3);
+		/*transform: rotateX(180deg);*/
+	}
+	</style>
+	
+</head>
+<body>
+	<div class="box1"> Transition1 </div>
+	<div class="box2"> Transform </div>
+</body>
+</html>
