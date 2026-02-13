@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Factorial</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<h1> Factorial No </h1>
+	<input type="number" id="num" placeholder="Enter number" />
+	<button onclick="getFactorial()">Click</button>
+	<div id="result"> </div>
+
+	<script>
+	function getFactorial(){
+		let num = parseInt(document.getElementById("num").value)
+		let fact = 1
+		for(let i=1;i<=num;i++){
+			fact = fact * i
+		}//end for	
+		document.getElementById("result").innerHTML = "<h1>"+fact+"</h1>"
+	}
+	</script>
+</body>
+</html>
+
+

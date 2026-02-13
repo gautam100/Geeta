@@ -12,11 +12,11 @@
 
 	<script>
 	function prnTable(){
-		debugger;
+		//debugger;
 		let table = parseInt(document.getElementById("tab_num").value)
 		let container = document.getElementById("result")
 
-		for(let i=1;i<10;i++){
+		for(let i=1;i<=10;i++){
 			container.innerHTML += table + "X" + i + "="+ table*i + "<br />"
 		}
 		
