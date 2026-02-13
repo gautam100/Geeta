@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Prime No</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<h1>While Loop - prime No</h1>
+	<input type="number" id="num" placeholder="Enter number" />
+	<button onclick="chkPrime()">Click</button>
+	<div id="result"> </div>
+
+	<script>
+	function chkPrime(){
+		let num = parseInt(document.getElementById("num").value)
+		let primeFlag = true
+		let i = 2
+		while(i<num){
+			if(num%i === 0){
+				primeFlag = false;
+				break;
+			}
+			i++;
+		}//while end
+		if(primeFlag === true){
+			document.getElementById("result").innerHTML = "Prime No"
+		}else{
+			document.getElementById("result").innerHTML = "Not a Prime No"
+		}
+	}
+	</script>
+</body>
+</html>
+
+
