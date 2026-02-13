@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> For Loop </title>
+</head>
+<body>
+	<h1> Loop </h1>
+	<input type="number" id="table" placeholder="Enter number" />
+	<button onclick="generateTable()">Click </button>
+	<div id="result"> </div>
+
+	<script>
+	function generateTable(){
+		//debugger;	
+		let tab = parseInt(document.getElementById("table").value);
+		let result = document.getElementById("result")
+		result.innerHTML = "";
+		
+		for(let i=1; i<=10; i++){
+			result.innerHTML += tab +"X"+ i + " = "+tab*i + "<br />"
+		}//for end
+
+	}
+	</script>
+</body>
+</html>
