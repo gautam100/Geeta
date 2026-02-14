@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested Loop</title>
+    </head>
+    <body onload="main()">
+        <h1>Nested Loop</h1>   
+        <div id="result">
+
+        </div>     
+        <script>
+            function main(){
+                for(let outer = 1; outer <= 3; outer++){
+                    document.getElementById("result").innerHTML += "<br />Outer: "+outer +"<br>";
+                    for(let inner = 1; inner <= 10; inner++){
+                        document.getElementById("result").innerHTML += "&nbsp;&nbsp;Inner: "+inner;
+                    }//inner loop
+                }//outer loop
+            }
+        </script>
+    </body>
+</html>
