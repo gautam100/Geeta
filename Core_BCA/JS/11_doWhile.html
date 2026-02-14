@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do While</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 500px;
+                border: 1px solid black;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Do While Loop </h1>
+
+        <button onclick="doWhileLoop()">Click</button>
+        <div id="result" class="box"></div>
+        <script>
+            function doWhileLoop(){
+                let i=2;
+                do{
+                    document.getElementById("result").innerHTML += i + "<br>";
+                    i+=2;
+                }while(i<=10);
+            }
+        </script>
+    </body>
+</html>
