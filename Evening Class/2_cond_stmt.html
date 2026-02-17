@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <input type="number" id="age" placeholder="Enter your age" />
+    <div id="error_container" style="color: red"></div>
+    <button onclick="checkAge()">Check Age</button>
+    <script>
+      function checkAge() {
+        let age = document.getElementById("age").value;
+        if (age === "") {
+          //alert("Please enter your age");
+          document.getElementById("error_container").innerHTML =
+            "Please enter your age!";
+          document.getElementById("age").style.border = "5px solid red";
+          document.getElementById("age").focus();
+          return false;
+        } else if (isNaN(age)) {
+          document.getElementById("error_container").innerHTML =
+            "Please enter a valid number!";
+          document.getElementById("age").style.border = "5px solid red";
+          document.getElementById("age").focus();
+          return false;
+        } else if (age < 0) {
+          document.getElementById("error_container").innerHTML =
+            "Age cannot be negative!";
+          document.getElementById("age").style.border = "5px solid red";
+          document.getElementById("age").focus();
+          return false;
+        }else{
+            document.getElementById("error_container").innerHTML = "";
+            document.getElementById("age").style.border = "1px solid black";
+            //alert("Your age is: " + age);
+            alert(`Your age is:  ${age}`);
+        }
+      }
+    </script>
+  </body>
+</html>

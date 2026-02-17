@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <input type="number" id="first_num" placeholder="Enter first number" />
+        <input type="number" id="second_num" placeholder="Enter second number" />   
+        <input type="number" id="third_num" placeholder="Enter third number" />
+        <button onclick="checkHighestNo()">Check Highest Number</button>
+        <div id="output"></div>
+        <script>
+            function checkHighestNo(){
+                let a = parseInt(document.getElementById("first_num").value);
+                let b = parseInt(document.getElementById("second_num").value);
+                let c = parseInt(document.getElementById("third_num").value);
+
+                if(a<b){
+                    a=b
+                }
+                if(a<c){
+                    a=c
+                }
+                document.getElementById("output").innerHTML = `The highest number is: ${a}`;
+
+            }
+        </script>
+    </body>
+</html>
