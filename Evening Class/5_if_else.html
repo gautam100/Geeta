@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <input type="number" id="first_num" placeholder="Enter first number" />
+        <button onclick="chkIsEven()">Click</button>
+        <div id="output"></div>
+        <script>
+            function chkIsEven(){
+                let num = document.getElementById("first_num").value;
+                if(num % 2 === 0){
+                    document.getElementById("output").innerHTML = `${num} is an even number!`;
+                }else{
+                    document.getElementById("output").innerHTML = `${num} is an odd number!`;
+                }
+            }
+        </script>
+    </body>
+</html>

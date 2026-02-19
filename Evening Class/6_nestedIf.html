@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="number" id="age" placeholder="Enter Age" />
+        <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+        <div id="output"></div>
+        <button onclick="chkEligibility()">Check Eligibility</button>        
+        <script>
+            function chkEligibility(){
+                let age = document.getElementById("age").value;
+                let gender = document.getElementById("gender").value;
+                let elem = document.getElementById("output");
+                if(age >=18){
+                    if(gender === "M"){
+                        elem.innerHTML = "Enjoy your Mojito!"            
+                    }else if(gender === "F"){
+                        elem.innerHTML = "Enjoy your Leamonade!"
+                    }else{
+                        elem.innerHTML = "Please select the gender!"
+                    }
+                }else{
+                    elem.innerHTML = "Enjoy Coke!"
+                }
+            }
+        </script>
+    </body>
+</html>

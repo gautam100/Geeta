@@ -6,17 +6,36 @@
     <body>
         <select id="day" onchange="prnDayDetail()">
             <option value="">Select a day</option>
-            <option value="Monday">Monday</option>
-            <option value="Tuesday">Tuesday</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Friday">Friday</option>
-            <option value="Saturday">Saturday</option>
-            <option value="Sunday">Sunday</option>
+            <option value="Mon">Monday</option>
+            <option value="Tue">Tuesday</option>
+            <option value="Wed">Wednesday</option>
+            <option value="Thur">Thursday</option>
+            <option value="Fri">Friday</option>
+            <option value="Sat">Saturday</option>
+            <option value="Sun">Sunday</option>
         </select>
+        <div id="output"></div>
         <script>
             function prnDayDetail(){
-                
+                let day = document.getElementById("day").value;
+                let elem = document.getElementById("output");
+                if(day === "Mon"){
+                    elem.innerHTML = "Monday is the first day of the week";
+                }else if(day === "Tue"){
+                    elem.innerHTML = "Tuesday is the second day of the week";
+                }else if(day === "Wed"){
+                    elem.innerHTML = "Wednesday is the third day of the week";
+                }else if(day === "Thur"){
+                    elem.innerHTML = "Thursday is the fourth day of the week";
+                }else if(day === "Fri"){
+                    elem.innerHTML = "Friday is the fifth day of the week"; 
+                }else if(day === "Sat"){
+                    elem.innerHTML = "Saturday is the sixth day of the week";
+                }else if(day === "Sun"){
+                    elem.innerHTML = "Sunday is the seventh day of the week";   
+                }else{
+                    elem.innerHTML = "Plese choose a day from the dropdown!";
+                }
             }
         </script>
     </body>
