@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body onload="whileLoop()">
+        <button onclick="reverseWhileLoop()">Reverse While Loop</button>
+        <div id="output"></div>
+        <script>
+            function whileLoop(){
+                let i = 1; //step1: initilization
+                while(i <= 10){ //step2: condition
+                    document.getElementById("output").innerHTML += "The number is " + i + "<br>";
+                    i++;//step3: increment/decrement
+                }
+            }
+            function reverseWhileLoop(){
+                let i = 20
+                while(i>=1){
+                    document.write("The number is " + i + "<br>");
+                    i--;
+                }
+            }
+        </script>
+    </body>
+</html>
