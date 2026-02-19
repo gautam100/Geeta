@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Switch Case</h1>
+        <select id="month_dd" onchange="displayMonth()">
+            <option value="">Select Month</option>
+            <option value="1">Jan</option>
+            <option value="2">Feb</option>
+            <option value="3">Mar</option>    
+            <option value="4">Apr</option>
+            <option value="5">May</option>  
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Aug</option>
+            <option value="9">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+        </select>
+        <div id="display">..</div>
+        <script>
+            function displayMonth(){
+                let month = document.getElementById("month_dd").value;
+                let display = document.getElementById("display");
+                switch(month){
+                    case "1":
+                        display.innerHTML = "First month of year is January";
+                        break;
+                    case "2":
+                        display.innerHTML = "Second month of year is February";
+                        break;
+                    case "3":
+                        display.innerHTML = "Third month of year is March";
+                        break;
+                    case "4":
+                        display.innerHTML = "Fourth month of year is April";
+                        break;
+                    case "5":
+                        display.innerHTML = "Fifth month of year is May";
+                        break;
+                    case "6":
+                        display.innerHTML = "Sixth month of year is June";
+                        break;
+                    case "7":
+                        display.innerHTML = "Seventh month of year is July";
+                        break;
+                    case "8":
+                        display.innerHTML = "Eighth month of year is August";
+                        break;
+                    case "9":
+                        display.innerHTML = "Ninth month of year is September";
+                        break;
+                    case "10":
+                        display.innerHTML = "Tenth month of year is October";
+                        break;
+                    case "11":
+                        display.innerHTML = "Eleventh month of year is November";
+                        break;
+                    case "12":
+                        display.innerHTML = "Twelfth month of year is December";
+                        break;
+                    default:
+                        display.innerHTML = "Pls select a month";
+
+                }
+            }
+        </script>
+    </body>
+</html>
