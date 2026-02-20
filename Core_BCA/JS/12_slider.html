@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Slider</title>
+    <style>
+      #slider {
+        width: 1300px;
+        height: 500px;
+        border: 5px solid black;
+      }
+      .prev-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .next-btn {
+        position: absolute;
+        top: 50%;
+        right: 222px;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Slider</h1>
+    <div id="slider">
+      <div id="image_container">
+        <img src="./images/img1.jpg" width="1300" height="500" />
+      </div>
+      <div>
+        <div class="prev-btn"><button onclick="prevImage()">Prev</button></div>
+        <div class="next-btn"><button onclick="nextImage()">Next</button></div>
+      </div>
+    </div>
+    <div id="imgNo">Image 1</div>
+
+    <script src="12_slider.js"></script>
+  </body>
+</html>
