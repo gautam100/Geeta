@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body onload="myFunc()">
+    <div id="container"></div>
+    <div id="output"></div>
+    <script>
+      let myFunc = function () {
+        let ar = [
+          function () {
+            console.log("Hello!");
+          },
+          function () {
+            console.log("World!");
+          },
+        ];
+
+        ar[0]();
+        ar[1]();
+
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Objects</title>
+    </head>
+    <body onload="myFunc()">
+        <h1>Objects</h1>
+        <script>
+            let myFunc = () =>{
+                let car = {
+                    color: "red",
+                    engine: 1200,
+                    gearBox: "Automatic"
+                }
+                console.log(typeof car) //Object
+                console.log(car.color) //red
+                console.log(car.engine) //1200
+                console.log(car.gearBox) //Automatic
+
+                for(let temp in car){
+                    console.log(car[temp])
+                }
+                let keys = Object.keys(car)
+                console.log(keys)
+
+                console.log(car instanceof Object)
+
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body onload="myFunc()">
+    <button onclick="dataTypeIdentifier()">Click Here</button>
+    <div id="output"></div>
+    <script>
+      let myFunc = () => {
+        let ar = [5, 25, "A", "B", 10];
+        let sum = 0;
+        for (let temp of ar) {
+          if (typeof temp === "number") {
+            sum = sum + temp;
+          }
+        } //for
+        console.log(sum);
+      };
+      let dataTypeIdentifier = () => {
+        let ar = [12, "John", true, 100, "Smith", null, undefined];
+        let num = 0,
+          str = 0,
+          bool = 0,
+          extra = 0;
+        for (let temp of ar) {
+          if (typeof temp === "number") {
+            num++;
+          } else if (typeof temp === "string") {
+            str++;
+          } else if (typeof temp === "boolean") {
+            bool++;
+          } else {
+            extra++;
+          }
+          document.getElementById("output").innerHTML =
+            `Total Nos: ${num} <br /> Total Strings: ${str} <br /> Total Boolean: ${bool}<br /> Total Extra: ${extra}`;
+        }
+      };
+    </script>
+  </body>
+</html>

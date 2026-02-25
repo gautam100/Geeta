@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body onload="myFunc()">
+        <div id="output"> 
+
+        </div>
+        <script>
+            let myFunc = () =>{
+                let product = {
+                    id: 101,
+                    name: "T-Shirt",
+                    description: "This is fake description for demo purpose",
+                    price: 500,
+                    image: "https://m.media-amazon.com/images/I/71klDrSTd3L._AC_UL480_FMwebp_QL65_.jpg"
+                }
+                //console.log(Object.keys)
+                for(let temp in product){
+                    document.getElementById("output").innerHTML += product[temp]+"<br />"
+                }
+            }//myFunc ends
+        </script>
+    </body>
+</html>

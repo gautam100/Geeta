@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body onload="myFunc()">
+    <script>
+      let myFunc = () => {
+        let ar = [50, 10, 100.5, "Rohit", true];
+        console.log(ar[0]);
+        console.log(ar[1]);
+        console.log(ar[2]);
+        console.log(ar[3]);
+        console.log(ar[4]); //true
+
+        for (let i = 0; i < ar.length; i++) {
+          console.log(ar[i]);
+        }
+
+        for (let temp of ar) {
+          console.log(temp);//50 10 100.5 ...
+        }
+      };
+    </script>
+  </body>
+</html>

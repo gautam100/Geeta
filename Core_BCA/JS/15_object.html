@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body onload="myFunc()">
+        <div id="output"> </div>
+        <script>
+            let myFunc = () =>{
+                let car = {}
+                //let car = new Object;
+                car.color = "Red";
+                car.engine = 1200;
+                car.gearType = "Automatic";
+
+                console.log(car.color)//Red
+
+                for(let temp in car){
+                    console.log(car[temp])
+                }
+            }//myFunc ends
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Do While</title>
+    </head>
+    <body onload="doWhileLoop()">
+        <h1>Do While Loop</h1>
+        <div id="output"></div>
+        <script>
+            function doWhileLoop(){
+                let i = 1
+                let elem = document.getElementById("output");
+                do{
+                    elem.innerHTML += i + "<br>";
+                    i++;
+                }while(i<=10);
+            }
+        </script>
+    </body>
+</html>
