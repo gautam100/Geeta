@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body onload="myFunc()">
+        
+        <script>
+            let myFunc = () =>{
+                let ar1 = [10,20,30]
+                let [fno, sno, tno] = ar1
+                console.log(fno, sno, tno) //10 20 30
+
+
+                let ar2 = [...ar1] //spread operator
+
+                ar2[2] = 300;
+                console.log(ar1) //10 20 300
+                console.log(ar2) //10 20 300
+                xyz(ar2) // calling xyz function
+            }
+            //defining xyz(): here ... is rest operator
+            function xyz(...ar){
+
+            }
+        </script>
+    </body>
+</html>

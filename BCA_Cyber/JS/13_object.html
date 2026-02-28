@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object</title>
+    </head>
+    <body onload="myFunc()">
+        <!--<button onclick="doSub()">Arrow Function</button>-->
+        <script>
+            //Anonymous function
+            let myFunc = function(){
+                let a = 10
+                let b = 20
+                console.log(a+b)
+                let res = doSub(a,b)
+                console.log("Minus result is :"+res)
+            }
+            //Arrow function
+            let doSub = (x,y) => x-y
+            
+        </script>
+    </body>
+</html>

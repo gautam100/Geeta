@@ -33,10 +33,20 @@ let getProdList = function () {
   ];
   let card = document.getElementById("container");
   for (let prod of prodArray) {
+    let description = prod.description.slice(0,150) + '...'
     card.innerHTML += `
         <div class="card">
                 <div class="img">
-                    here image will display
+                    <img src="${prod.image}" width="240" height="240" />
+                </div>
+                <div>
+                    <h3>${prod.title}</h3>
+                    <p>
+                        ${description}
+                    </p>
+                    <div class="price-container">
+                      Price: &#8377; ${prod.price}
+                    </div>
                 </div>
             </div>
         `;

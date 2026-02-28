@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body onload="myFunc()">
+    <script>
+      function myFunc() {
+        let ar = [
+          function first() {
+            console.log("This is first function");
+          },
+          function second() {
+            console.log("This is second function");
+          },
+        ];
+        ar[0]();
+        ar[1]();
+      }
+    </script>
+  </body>
+</html>

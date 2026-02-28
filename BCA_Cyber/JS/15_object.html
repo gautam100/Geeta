@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body onload=myFunc()>
+        
+        <script>
+            let myFunc = () =>{
+                //Here car is the object of Object class (inbuild class of JS)
+                let car ={
+                    color: "red",
+                    engine: 1200,
+                    gearBox: "Automatic"
+                }
+                for(let key in car){
+                    console.log(`key is ${key} and value is ${car[key]}`)
+                }
+                console.log(car instanceof Object) //true
+            }
+        </script>
+    </body>
+</html>

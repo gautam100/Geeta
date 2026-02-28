@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body onload="myFunc()">
+        
+        <script>
+            let myFunc = () =>{
+                let car = {} //Creation of object
+                car.color = "White"
+                car.gearType = "Automatic"
+                car.engine = 1200
+
+                console.log(car.color) //White
+                console.log(car.gearType) //Automatic
+                console.log(car.engine) //1200
+
+                for(let temp in car){
+                    console.log(`Key is: ${temp} and value is  ${car[temp]}`)
+                }
+
+            }
+        </script>
+    </body>
+</html>
