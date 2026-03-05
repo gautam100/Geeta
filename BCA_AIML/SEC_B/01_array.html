@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Slider</title>
+    <style>
+      .slider {
+        width: 1400px;
+        height: 450px;
+        margin: 20px;
+        border: 5px solid #000;
+      }
+      .btn-conatiner {
+        margin: 0px 20px;
+      }
+      .float-left {
+        float: left;
+      }
+      .float-right {
+        float: right;
+        margin: 0px 90px 0px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider" id="slider">
+      <img src="./images/img1.jpg" width="1400" height="450" />
+    </div>
+    <div>
+      <div class="btn-conatiner">
+        <button class="float-left" onclick="reverseIndex()"><< Prev</button>
+      </div>
+      <div id="index_no"> index</div>
+      <div class="btn-container">
+        <button class="float-right" onclick="myFunc()"> Next >></button>
+      </div>
+    </div>
+    <script>
+      let arr = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"];
+      let index = 0;
+      function myFunc() {
+        index +=1
+        if(index === arr.length){
+            index=0
+        }
+        document.getElementById("slider").innerHTML = `<img src="./images/${arr[index]}" width="1400" height="450" />`
+      }
+      function reverseIndex(){
+        index = index - 1
+        if(index === -1){
+            index = arr.length-1
+        }
+        document.getElementById("slider").innerHTML = `<img src="./images/${arr[index]}" width="1400" height="450" />`
+        //document.getElementById("slider").innerHTML = "<img src='./images/"+arr[index]+"' width='1400' height='450 />"
+        document.getElementById("index_no").innerHTML = index
+      }
+    </script>
+  </body>
+</html>
