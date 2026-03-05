@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body onload="myFunc()">
+        
+        <script>
+            let myFunc = () =>{
+                let car = {} // Obj is an empty Objects
+                //let obj1 = new Object();
+
+                car.color = "White"
+                car.brand = "Maruti"
+                car.model = "Swift"
+                car.gear_type = "Automatic"
+                car.make = "2022"
+                car.price = 700000
+                car.isInsurance = true
+                car.accessories = ["Leather Seat","3D Mat"]
+
+                console.log(car.color) // White
+                //iterate the object
+                for(let key in car){
+                    console.log(`key is ${key} and value is ${car[key]}`)
+                }
+
+            }
+        </script>
+    </body>
+</html>

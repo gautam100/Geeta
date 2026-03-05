@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body onload="myFunc()">
+        
+        <script>
+            let myFunc = () =>{
+                let car = {
+                    color : "white",
+                    cc : 1200,
+                    price: 700000,
+                    accessories: ["Leather Seat", "3D Mat"]
+                } 
+                
+                //iterate the object
+                for(let key in car){
+                    console.log(`key is ${key} and value is ${car[key]}`)
+                }
+
+                console.log(car instanceof Object)//true
+                console.log(Object.keys(car))
+            }
+        </script>
+    </body>
+</html>
