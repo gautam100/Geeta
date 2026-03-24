@@ -1,4 +1,4 @@
-const API_KEY = "69679944bea740b49bd111946261004";// Get your own free API key at https://www.weatherapi.com
+const API_KEY = "59679944bea740b49bd111946261003";// Get your own free API key at https://www.weatherapi.com
 //53
 function fetchWeather(city = "London") {
   const endPoint = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${encodeURIComponent(

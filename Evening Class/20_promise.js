@@ -5,7 +5,7 @@ function MyPromise(){
         if(result === true){
             resolve('Promise is successful')
         }else{
-            reject('Promis is unscccessful')
+            reject('Promise is unscccessful')
         }
     })
 }
