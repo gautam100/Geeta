@@ -33,8 +33,8 @@ getData()
     }
     document.getElementById("tbody").innerHTML = html;
   })
-  .catch(function () {
-    document.getElementById("tbody").innerHTML = "Error in API Call!!!";
+  .catch(function (serverError) {
+    document.getElementById("tbody").innerHTML = "Error in API Call!!!"+serverError;
   })
   .finally(function () {
     console.log("Promise is over")
