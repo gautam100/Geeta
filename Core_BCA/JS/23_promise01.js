@@ -1,6 +1,6 @@
 function MyPromise() {
   return new Promise(function (resolve, reject) {
-    let result = Math.random() > 0.5;
+    let result = true
     if (result === true) {
       resolve("Promise is successful");
     } else {

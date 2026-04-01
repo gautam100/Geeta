@@ -1,6 +1,6 @@
 //This is our library file which we want to export and use in other file
 
-let doSum = (a,b) => {
+let doSum = (a=0,b=0) => {
     return a+b;
 }
 

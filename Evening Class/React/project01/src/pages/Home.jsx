@@ -1,11 +1,14 @@
 import React from 'react';
 import Parent from './Parent'
+import Effect from './Effect';
 
 const Home = () => {
     return (
         <div>
             <h1>This is Home Page</h1>
             <Parent></Parent>
+            <hr />
+            <Effect></Effect>
         </div>
     );
 };
