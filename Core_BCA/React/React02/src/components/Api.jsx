@@ -15,7 +15,7 @@ const Api = () => {
         console.log("Error in fetching data: " + error);
         setLoader(false);
       });
-  });
+  },[]);
 
   return (
     <>
