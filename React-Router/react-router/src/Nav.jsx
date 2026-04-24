@@ -40,8 +40,8 @@ const Nav = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  New page
+                <Link className="nav-link" to="/api">
+                  API
                 </Link>
               </li>
 
