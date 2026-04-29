@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-light bg-warning">
           <a className="navbar-brand pl-2" href="#">
             <strong>LOGO</strong>
           </a>
@@ -40,14 +40,14 @@ const Nav = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/use-effect">
-                  useEffect
+                <Link className="nav-link" to="/api">
+                  API
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/api">
-                API 
+                <Link className="nav-link" to="/">
+                  New Page
                 </Link>
               </li>
 

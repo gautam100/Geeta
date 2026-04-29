@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
-
+import React, { lazy, Suspense, useEffect, useState } from "react";
+//import Lifecycle from "./Lifecycle";
+const LazyComponent = lazy(() => import("./Lifecycle"));
 const Api = () => {
   const [loader, setLoader] = useState(false);
   const [users, setUsers] = useState([]);
+  const [showChild, setShowChild] = useState(false);
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
@@ -22,10 +24,18 @@ const Api = () => {
       ) : (
         <ul>
           {users.map((user) => (
-            <li>{user.name}</li>
+            <li key={user.id}>{user.name}</li>
           ))}
         </ul>
       )}
+      <button onClick={() => setShowChild(!showChild)}>
+        Lazy Loading [{showChild? "ON": "OFF"}]
+      </button>
+      {showChild ? (
+        <Suspense fallback={<p>Loading...</p>}>
+          <LazyComponent />
+        </Suspense>
+      ) : null}
     </>
   );
 };

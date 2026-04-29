@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Useeffect from "./pages/Useeffect"
+import Api from "./pages/Api"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/use-effect" element={<Useeffect />} />
+        <Route path="/api" element={<Api />} />
       </Routes>
       </BrowserRouter>
     </div>
