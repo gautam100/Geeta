@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Required for interactive features
+import ParentComp from "./pages/ParentComp";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/props123" element={<ParentComp />} />
         </Routes>
         </BrowserRouter>
       </div>

@@ -52,8 +52,8 @@ const Nav = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  New Page
+                <Link className="nav-link" to="/life-cycle">
+                  Life Cycle
                 </Link>
               </li>
 

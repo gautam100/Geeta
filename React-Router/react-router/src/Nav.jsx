@@ -46,8 +46,8 @@ const Nav = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  New Page
+                <Link className="nav-link" to="/context-api">
+                  Context API
                 </Link>
               </li>
 

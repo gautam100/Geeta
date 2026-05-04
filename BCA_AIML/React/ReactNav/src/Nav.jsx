@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+        <nav className="navbar navbar-expand-lg bg-warning">
           <a className="navbar-brand pl-2" href="#">
             <strong>LOGO</strong>
           </a>
@@ -28,20 +28,20 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/about-us">
                   About
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" to="/contact-us">
                   Contact
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/api">
-                  API
+                <Link className="nav-link" to="/props123">
+                  Props
                 </Link>
               </li>
 

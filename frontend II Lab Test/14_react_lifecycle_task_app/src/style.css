@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ecfeff;
+}
+
+.app {
+  max-width: 750px;
+  margin: 45px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.message {
+  background: #dbeafe;
+  padding: 12px;
+  border-radius: 8px;
+  color: #1e40af;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 4px;
+  background: #0891b2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.task-card {
+  background: #f8fafc;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #15803d;
+}
