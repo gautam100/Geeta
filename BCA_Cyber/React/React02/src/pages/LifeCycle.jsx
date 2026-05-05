@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 const LifeCycle = () => {
   const [counter, setCounter] = useState(1);
   const [compStatus, setCompStatus] = useState();
+  
   useEffect(() => {
     setCompStatus("Mounting");
     console.log("Component is Loading.");

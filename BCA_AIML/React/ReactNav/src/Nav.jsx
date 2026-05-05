@@ -46,20 +46,20 @@ const Nav = () => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  New Page
+                <Link className="nav-link" to="/useEffect">
+                  UseEffect
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  New Page
+                <Link className="nav-link" to="/api">
+                  API
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  New Page
+                <Link className="nav-link" to="/life-cycle">
+                  Component Life Cycle
                 </Link>
               </li>
             </ul>
