@@ -1,0 +1,112 @@
+Below prompt will work for any project — whether it is a web app, mobile app, AI system, management system, or any other software project. Just fill in your project details and it is ready to use.
+Simply upload your report in claude.ai or similar LLM and get best version of your report.
+--------------------------------------------------------------------------------------------------
+
+Prompt: 
+
+
+You are a professional academic report writer specializing in Computer Science & Engineering final year projects. Write a complete, well-structured, and professionally formatted project report for the following project:
+Project Title: [Enter Your Project Title Here]
+Student Name: [Enter Student Name]
+Roll No: [Enter Roll Number]
+Year: [Enter Year — e.g., Third Year (2023–2027)]
+University: [Enter University Name and Address]
+Department: [Enter Department Name]
+Supervisor: [Enter Supervisor Name and Designation]
+Project Head: [Enter Project Head Name]
+Session: [Enter Session — e.g., 2025–26]
+Project Duration: [Enter Start Date to End Date]
+Technology Stack Used: [Enter all technologies — e.g., React.js, Node.js, MongoDB, Express.js, Socket.io, etc.]
+Brief Project Description: [Write 3–5 lines describing what your project does, who uses it, and what problem it solves]
+
+SECTIONS TO INCLUDE (in this exact order):
+
+Title Page — University name, logo placeholder, project title, student details, supervisor name, department, session
+Candidate's Declaration — Formal declaration with student and supervisor signature blocks
+Certificate — Signed by supervisor and project head certifying the authenticity of the work
+Acknowledgement — Formal thank you to supervisor, project head, team, and technologies used
+Abstract — 150 to 200 words summarizing the project purpose, technology stack, key features, and outcomes
+Table of Contents — All sections listed with accurate page numbers
+List of Figures — Flowchart, DFD Level 0, DFD Level 1, Architecture Diagram, UI Screenshots
+Introduction — Background, purpose, platform overview, user roles and admin roles
+Problem Statement — Challenges and limitations in existing systems that this project addresses
+Objectives — Core, user-specific, technical, and extended objectives of the project
+Scope of the Project — Functional scope, out-of-scope items, and future enhancements
+Literature Review — Evolution of similar systems, gap analysis, comparative table, and opportunities identified
+Proposed System — How this project addresses the identified gaps in existing systems
+Goal — Core goals, user goals, admin goals, technical goals, and extended vision
+Methodology — Development model used (e.g., Agile), phased approach, and role-based methodology
+System Design — This section MUST include all of the following subsections:
+a) Architecture Overview
+Describe the overall system architecture based on the technology stack provided. Explain how the frontend, backend, and database layers are connected. Mention the communication protocols and APIs used.
+b) Flowchart — Process Flow
+Create a detailed textual flowchart using labeled steps and arrows based on the project description provided. The flow must cover:
+
+START
+User visits the application
+New User? → YES → Registration process (collect required details) → Verification → Profile/Account Setup
+New User? → NO → Login (using credentials or third-party authentication if applicable)
+Authentication Check → FAIL → Show Error → Retry Login
+Authentication Check → SUCCESS → Role Check
+Role = Admin → Admin Dashboard (show relevant admin features based on project)
+Role = User → User Dashboard
+User selects available features (based on the project — list all major features as decision branches)
+For each feature: describe the sub-steps, data involved, and outcome
+Logout → Session Cleared → Redirect to Login
+END
+Represent each step clearly as: [Step Name] → [Next Step] with decision points shown as: <Decision?>
+
+c) Data Flow Diagram — Level 0 (Context Diagram)
+Show the entire system as one single process. Include all relevant external entities based on the project description and show data flows between them and the central system. For each external entity show:
+
+What data flows INTO the system from that entity
+What data flows OUT of the system TO that entity
+Draw this using labeled boxes, arrows, and a central process circle described clearly in plain text.
+
+d) Data Flow Diagram — Level 1 (Detailed DFD)
+Break the system into numbered sub-processes based on the major modules of the project. For each process show:
+
+Process number and name
+Input data
+Output data
+Connected data stores
+Connected external entities (if any)
+Define all data stores clearly with labels (D1, D2, D3, etc.) and their purpose.
+
+e) Database Schema Design
+Define all database tables or collections based on the project's technology stack. For each table or collection include:
+
+Table/Collection name
+All field names with data types
+Primary key or unique identifier
+Relationships with other tables/collections (if any)
+
+f) Module Description
+Describe each major module of the project including its purpose, inputs, outputs, and how it connects with other modules.
+Implementation Plan — Minimum 6 to 8 phases with duration, tasks, and deliverables per phase
+Expected Outcomes — Functional, technical, academic, and user experience outcomes
+Tools and Technologies — Categorized table covering: Frontend, Backend, Database, Security, Deployment, and Testing tools
+Conclusion — Summary of what was achieved, lessons learned, and significance of the project
+Future Scope — Features and improvements planned for the next version of the project
+References — Minimum 10 references in IEEE format including official documentation, research journals, and papers
+
+
+STRICT FORMATTING RULES — FOLLOW WITHOUT EXCEPTION:
+
+Text Alignment: Every paragraph and body text must be fully justified — aligned on both left and right margins
+Page Numbers: Every page must have a centered page number at the bottom
+Font: Use Times New Roman, size 12 for body text; size 14 bold for section headings; size 16 bold for chapter titles
+Line Spacing: 1.5 line spacing throughout the document
+Margins: 1 inch on all sides (standard academic format)
+Headings: All main section headings in UPPERCASE and bold
+Language: Formal academic English only — no casual, conversational, or informal language anywhere
+Diagrams: All flowcharts and DFDs must be represented as clearly labeled textual notation so they can be directly recreated in MS Word, draw.io, or Lucidchart without ambiguity
+Tables: Use proper bordered tables with headers wherever comparisons or structured data appear
+Lists: Use consistent bullet points for unordered lists and numbers for ordered or sequential lists
+Figures: Every diagram or screenshot must have a figure number and caption below it — e.g., Figure 1: System Architecture Diagram
+No Repetition: Do not repeat the same content across multiple sections — each section must add new and relevant information
+Completeness: Do not skip, shorten, or summarize any section — write each one in full detail
+
+
+Write the complete report now, section by section, in order. Do not stop between sections. Maintain consistent academic tone, formatting, and professional language throughout the entire document.
+

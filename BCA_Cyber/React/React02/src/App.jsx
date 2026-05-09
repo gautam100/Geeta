@@ -6,6 +6,7 @@ import Contact from "./pages/Contact"
 import Useeffect from "./pages/Useeffect"
 import Api from "./pages/Api"
 import LifeCycle from "./pages/Lifecycle"
+import University from "./pages/University"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/use-effect" element={<Useeffect />} />
         <Route path="/api" element={<Api />} />
         <Route path="/life-cycle" element={<LifeCycle />} />
+        <Route path="/context-api" element={<University />} />
       </Routes>
       </BrowserRouter>
     </div>
